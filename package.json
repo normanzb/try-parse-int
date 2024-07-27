@@ -1,0 +1,20 @@
+{
+  "name": "try-parse-int",
+  "version": "1.0.0",
+  "main": "dist/tryParseInt.js",
+  "types": "dist/tryParseInt.d.ts",
+  "files": ["dist/tryParseInt.js", "dist/tryParseInt.d.ts"],
+  "scripts": {
+    "build": "tsup tryParseInt.ts",
+    "test": "globstar -- node --import tsx --test \"**/*.spec.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "globstar": "^1.0.0",
+    "tsup": "^8.2.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
